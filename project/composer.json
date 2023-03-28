@@ -11,6 +11,10 @@
     "repositories": [
         {
             "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     ],
@@ -22,7 +26,9 @@
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
         "drupal/devel": "^5.1",
-        "drush/drush": "^11.5"
+        "drush/drush": "^11.5",
+        "npm-asset/chosen": "^0.0.2",
+        "oomphinc/composer-installers-extender": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -36,11 +42,13 @@
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "cweagans/composer-patches": true
+            "cweagans/composer-patches": true,
+            "oomphinc/composer-installers-extender": true
         },
         "sort-packages": true
     },
     "extra": {
+        "enable-patching": true,
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
@@ -51,7 +59,9 @@
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
@@ -95,6 +105,17 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+            
+        ],
+        "patches": {
+            "drupal/core": {
+                "Add startup configuration for PHP server":
+                "https://www.drupal.org/files/issues/add_a_startup-1543858-30.patch"
+            }
         }
     }
 }
