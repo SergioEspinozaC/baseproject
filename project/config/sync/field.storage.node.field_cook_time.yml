@@ -1,0 +1,20 @@
+uuid: 22072423-7d3a-4af2-a38d-848f47636f56
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_cook_time
+field_name: field_cook_time
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
