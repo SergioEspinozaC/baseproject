@@ -1,8 +1,8 @@
 _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
-uuid: 3e63068a-821c-4bbb-8c46-b0d632f0a837
-name: TM7101
+uuid: 604e28a6-af7f-4192-875d-9a68eb95e90c
+name: 'Drush Site-Install'
 mail: admin@example.com
 slogan: ''
 page:
