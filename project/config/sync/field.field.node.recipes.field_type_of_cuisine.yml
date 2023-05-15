@@ -1,0 +1,29 @@
+uuid: 6cdf3134-9f5f-4efd-84b9-4ce68d5e48a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_cuisine
+    - node.type.recipes
+    - taxonomy.vocabulary.cuisine
+id: node.recipes.field_type_of_cuisine
+field_name: field_type_of_cuisine
+entity_type: node
+bundle: recipes
+label: 'Type of cuisine'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cuisine: cuisine
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

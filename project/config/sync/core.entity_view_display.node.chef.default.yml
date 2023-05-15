@@ -1,0 +1,47 @@
+uuid: 11381f84-e56b-4e45-ad3b-2d2c724fdc8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.chef.body
+    - field.field.node.chef.field_chef_image
+    - field.field.node.chef.field_speciality
+    - node.type.chef
+  module:
+    - text
+    - user
+id: node.chef.default
+targetEntityType: node
+bundle: chef
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_chef_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_speciality:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

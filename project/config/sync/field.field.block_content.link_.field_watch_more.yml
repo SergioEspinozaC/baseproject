@@ -1,0 +1,28 @@
+uuid: 672b25da-0987-435b-a31a-21d0acf97f10
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_
+    - field.storage.block_content.field_watch_more
+  module:
+    - link
+id: block_content.link_.field_watch_more
+field_name: field_watch_more
+entity_type: block_content
+bundle: link_
+label: 'Watch More'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/courses'
+    title: 'Watch More'
+    options: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 1
+field_type: link
