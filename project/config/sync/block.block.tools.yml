@@ -1,0 +1,25 @@
+uuid: bbc55436-49ee-40dd-b193-f1bd747f61ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - olivero
+id: tools
+theme: olivero
+region: sidebar
+weight: -9
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

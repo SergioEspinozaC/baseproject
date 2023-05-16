@@ -1,0 +1,17 @@
+uuid: 1c2f16ae-4192-41d8-9260-6d5c0bb18b60
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Recipes
+type: recipes
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

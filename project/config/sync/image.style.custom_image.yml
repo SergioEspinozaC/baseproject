@@ -1,0 +1,23 @@
+uuid: 19eb7c21-fc8e-4e0b-9eef-2588fecec218
+langcode: en
+status: true
+dependencies: {  }
+name: custom_image
+label: 'custom small'
+effects:
+  1ae0c953-3a6d-47ba-a5b7-3fa3ee56dd96:
+    uuid: 1ae0c953-3a6d-47ba-a5b7-3fa3ee56dd96
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 480
+      height: 480
+      anchor: center-center
+  89a943c8-e545-4997-b9d4-53679fc3bf59:
+    uuid: 89a943c8-e545-4997-b9d4-53679fc3bf59
+    id: image_rotate
+    weight: 2
+    data:
+      degrees: 360
+      bgcolor: ''
+      random: true

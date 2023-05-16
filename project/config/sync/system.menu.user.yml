@@ -1,0 +1,8 @@
+uuid: f182d96a-1ed3-483e-bf71-c50b250866a2
+langcode: en
+status: true
+dependencies: {  }
+id: user
+label: User
+description: 'information about the user '
+locked: false

@@ -1,0 +1,33 @@
+uuid: da3dcebe-6c6f-4f90-a214-df49205d895d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:featured_courses:e78e23dd-a14a-4026-90d5-dbb37e301b73'
+  module:
+    - block_content
+    - node
+  theme:
+    - olivero
+id: recentcourses
+theme: olivero
+region: sidebar
+weight: -7
+provider: null
+plugin: 'block_content:e78e23dd-a14a-4026-90d5-dbb37e301b73'
+settings:
+  id: 'block_content:e78e23dd-a14a-4026-90d5-dbb37e301b73'
+  label: 'Recent courses'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      courses: courses

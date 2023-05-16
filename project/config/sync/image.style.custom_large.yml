@@ -1,0 +1,20 @@
+uuid: cc13f59e-a509-458b-9656-adaded0bae47
+langcode: en
+status: true
+dependencies: {  }
+name: custom_large
+label: 'custom large'
+effects:
+  366d2927-193b-4bda-a286-c1652841426a:
+    uuid: 366d2927-193b-4bda-a286-c1652841426a
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: 1080
+      upscale: true
+  af4a1e35-5b45-40eb-b277-dddfb7061537:
+    uuid: af4a1e35-5b45-40eb-b277-dddfb7061537
+    id: image_desaturate
+    weight: 2
+    data: {  }

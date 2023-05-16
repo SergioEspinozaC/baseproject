@@ -1,0 +1,27 @@
+uuid: 5b507b7c-0747-4c9c-9c7d-88706f7fe498
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_
+    - field.field.block_content.link_.field_watch_more
+  module:
+    - link
+id: block_content.link_.default
+targetEntityType: block_content
+bundle: link_
+mode: default
+content:
+  field_watch_more:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

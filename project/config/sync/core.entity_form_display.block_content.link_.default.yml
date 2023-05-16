@@ -1,0 +1,31 @@
+uuid: 3eba98bb-4264-4955-903b-b23fb7e2fd19
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_
+    - field.field.block_content.link_.field_watch_more
+  module:
+    - link
+id: block_content.link_.default
+targetEntityType: block_content
+bundle: link_
+mode: default
+content:
+  field_watch_more:
+    type: link_default
+    weight: 26
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
